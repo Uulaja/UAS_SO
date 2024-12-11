@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input Pasien</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulir Input Pasien</h1>
+        <form action="insert.php" method="POST" class="form-input">
+            <label for="nama">Nama Pasien:</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama pasien" required>
+
+            <label for="keparahan">Tingkat Keparahan (1-5):</label>
+            <select id="keparahan" name="keparahan" required>
+                <option value="" disabled selected>Pilih Tingkat Keparahan</option>
+                <option value="5">5 - Sangat Kritikal</option>
+                <option value="4">4 - Kritis</option>
+                <option value="3">3 - Sedang</option>
+                <option value="2">2 - Ringan</option>
+                <option value="1">1 - Sangat Ringan</option>
+            </select>
+
+            <label for="riwayat">Riwayat Penyakit:</label>
+            <select id="riwayat" name="riwayat" required>
+                <option value="" disabled selected>Pilih Riwayat Penyakit</option>
+                <option value="1">1 - Ada Riwayat</option>
+                <option value="0">0 - Tidak Ada Riwayat</option>
+            </select>
+
+            <label for="usia">Usia Pasien:</label>
+            <input type="number" id="usia" name="usia" placeholder="Masukkan usia pasien" required>
+
+            <button type="submit">Input Data</button>
+        </form>
+    </div>
+</body>
+</html>
